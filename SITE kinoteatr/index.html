@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Кинотеатр Факел</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="header__logo">
+        <span>Ф</span>
+        <span>А</span>
+        <span>К</span>
+        <span>Е</span>
+        <span>Л</span>
+      </a>
+      <div class="form">
+        <button class="form__button"></button>
+        <input
+          class="form__input"
+          type="search"
+          placeholder="Искать на сайте"
+        />
+      </div>
+
+      <nav class="header__nav">
+        <div class="laptop_menu">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link header__link_gradient" href="index.html"
+                >О нас</a
+              >
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="schedule.html">Расписание</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="gallery.html">Галерея</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div id="mobile_menu" style="display: none">
+          <ul class="mobile_menu__list">
+            <li>
+              <a class="header__link" href="index.html">О нас</a>
+            </li>
+            <li>
+              <a class="header__link" href="schedule.html">Расписание</a>
+            </li>
+            <li>
+              <a class="header__link" href="gallery.html">Галерея</a>
+            </li>
+            <li>
+              <a class="header__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="header__menu" onclick="toggle_menu()"></button>
+    </header>
+    <section>
+      <div class="container">
+        <div class="main">
+          <div class="main__text">
+            <h1 class="main__title">Сайт кинотеатра «Факел»</h1>
+            <p class="main__desc">
+              Сайт создан для тех, кто любит просматривать кино на большом
+              экране! Здесь вы можете получить необходимую информацию о том, что
+              происходит внутри кинотеатра! Приглашаем к сотрудничеству и обмену
+              информацией.
+            </p>
+          </div>
+          <div class="main__image">
+            <img class="main__img" src="images/hall.jpg" alt="Кинотеатр" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__text"><span>© 2024 «My_website»</span></div>
+        <div class="footer__text"><span>+7 (999) 999 99 99</span></div>
+        <div class="footer__text">
+          <a href="mailto:admin@yoursite.ru">Написать письмо</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function toggle_menu() {
+      console.log("YTYYFhgvb", mobile_menu);
+      let visibility = mobile_menu.style.display;
+      mobile_menu.style.display = visibility == "none" ? "block" : "none";
+    }
+  </script>
+</html>
